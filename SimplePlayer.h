@@ -32,9 +32,13 @@ private:
     VlcMediaPlayer *_player;
 
     VlcInstance *_instance2;
-    //VlcMedia *_media2;
     VlcMediaPlayer *_player2;
-//    EqualizerDialog *_equalizerDialog;
+
+    VlcInstance *_instance3;
+    VlcMediaPlayer *_player3;
+
+    VlcInstance *_instance4;
+    VlcMediaPlayer *_player4;
 };
 
 #endif // SIMPLEPLAYER_H_

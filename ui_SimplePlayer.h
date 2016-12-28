@@ -16,8 +16,6 @@
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenu>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
@@ -35,22 +33,19 @@ public:
     QAction *actionOpenUrl;
     QWidget *centralwidget;
     QGridLayout *gridLayout_2;
-    QPushButton *openLocal;
-    QPushButton *stop;
-    QPushButton *pause;
-    QPushButton *openUrl;
     VlcWidgetVideo *video;
+    QPushButton *openUrl;
+    QPushButton *openLocal;
+    VlcWidgetVideo *video4;
+    VlcWidgetVideo *video3;
     VlcWidgetVideo *video2;
-    QMenuBar *menubar;
-    QMenu *menuFile;
-    QMenu *menuMedia;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *SimplePlayer)
     {
         if (SimplePlayer->objectName().isEmpty())
             SimplePlayer->setObjectName(QStringLiteral("SimplePlayer"));
-        SimplePlayer->resize(1220, 489);
+        SimplePlayer->resize(1253, 759);
         actionQuit = new QAction(SimplePlayer);
         actionQuit->setObjectName(QStringLiteral("actionQuit"));
         actionPause = new QAction(SimplePlayer);
@@ -66,31 +61,30 @@ public:
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         gridLayout_2 = new QGridLayout(centralwidget);
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
-        openLocal = new QPushButton(centralwidget);
-        openLocal->setObjectName(QStringLiteral("openLocal"));
+        video = new VlcWidgetVideo(centralwidget);
+        video->setObjectName(QStringLiteral("video"));
 
-        gridLayout_2->addWidget(openLocal, 0, 0, 1, 1);
-
-        stop = new QPushButton(centralwidget);
-        stop->setObjectName(QStringLiteral("stop"));
-
-        gridLayout_2->addWidget(stop, 3, 1, 1, 1);
-
-        pause = new QPushButton(centralwidget);
-        pause->setObjectName(QStringLiteral("pause"));
-        pause->setCheckable(true);
-
-        gridLayout_2->addWidget(pause, 3, 0, 1, 1);
+        gridLayout_2->addWidget(video, 1, 0, 1, 1);
 
         openUrl = new QPushButton(centralwidget);
         openUrl->setObjectName(QStringLiteral("openUrl"));
 
         gridLayout_2->addWidget(openUrl, 0, 1, 1, 1);
 
-        video = new VlcWidgetVideo(centralwidget);
-        video->setObjectName(QStringLiteral("video"));
+        openLocal = new QPushButton(centralwidget);
+        openLocal->setObjectName(QStringLiteral("openLocal"));
 
-        gridLayout_2->addWidget(video, 1, 0, 1, 1);
+        gridLayout_2->addWidget(openLocal, 0, 0, 1, 1);
+
+        video4 = new VlcWidgetVideo(centralwidget);
+        video4->setObjectName(QStringLiteral("video4"));
+
+        gridLayout_2->addWidget(video4, 2, 1, 1, 1);
+
+        video3 = new VlcWidgetVideo(centralwidget);
+        video3->setObjectName(QStringLiteral("video3"));
+
+        gridLayout_2->addWidget(video3, 2, 0, 1, 1);
 
         video2 = new VlcWidgetVideo(centralwidget);
         video2->setObjectName(QStringLiteral("video2"));
@@ -98,26 +92,9 @@ public:
         gridLayout_2->addWidget(video2, 1, 1, 1, 1);
 
         SimplePlayer->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(SimplePlayer);
-        menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1220, 20));
-        menuFile = new QMenu(menubar);
-        menuFile->setObjectName(QStringLiteral("menuFile"));
-        menuMedia = new QMenu(menubar);
-        menuMedia->setObjectName(QStringLiteral("menuMedia"));
-        SimplePlayer->setMenuBar(menubar);
         statusbar = new QStatusBar(SimplePlayer);
         statusbar->setObjectName(QStringLiteral("statusbar"));
         SimplePlayer->setStatusBar(statusbar);
-
-        menubar->addAction(menuFile->menuAction());
-        menubar->addAction(menuMedia->menuAction());
-        menuFile->addAction(actionOpenLocal);
-        menuFile->addAction(actionOpenUrl);
-        menuFile->addSeparator();
-        menuFile->addAction(actionQuit);
-        menuMedia->addAction(actionPause);
-        menuMedia->addAction(actionStop);
 
         retranslateUi(SimplePlayer);
         QObject::connect(actionQuit, SIGNAL(triggered()), SimplePlayer, SLOT(close()));
@@ -133,12 +110,8 @@ public:
         actionStop->setText(QApplication::translate("SimplePlayer", "Stop", Q_NULLPTR));
         actionOpenLocal->setText(QApplication::translate("SimplePlayer", "Open local file", Q_NULLPTR));
         actionOpenUrl->setText(QApplication::translate("SimplePlayer", "Open URL", Q_NULLPTR));
-        openLocal->setText(QApplication::translate("SimplePlayer", "Open local file", Q_NULLPTR));
-        stop->setText(QApplication::translate("SimplePlayer", "Stop", Q_NULLPTR));
-        pause->setText(QApplication::translate("SimplePlayer", "Pause", Q_NULLPTR));
         openUrl->setText(QApplication::translate("SimplePlayer", "Open URL", Q_NULLPTR));
-        menuFile->setTitle(QApplication::translate("SimplePlayer", "File", Q_NULLPTR));
-        menuMedia->setTitle(QApplication::translate("SimplePlayer", "Media", Q_NULLPTR));
+        openLocal->setText(QApplication::translate("SimplePlayer", "Open local file", Q_NULLPTR));
     } // retranslateUi
 
 };

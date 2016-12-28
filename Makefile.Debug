@@ -560,56 +560,7 @@ debug/SimplePlayer.o: SimplePlayer.cpp include/VLCQtCore/Common.h \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qtouchdevice.h \
 		C:/Qt/5.7/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qicon.h \
-		ui_SimplePlayer.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QAction \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qaction.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qactiongroup.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.7/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.7/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QButtonGroup \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qbuttongroup.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QGridLayout \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qgridlayout.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QHeaderView \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qheaderview.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qabstractitemmodel.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qitemselectionmodel.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qstyleoption.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		C:/Qt/5.7/mingw53_32/include/QtGui/qvalidator.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qregularexpression.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qslider.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qabstractslider.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qstyle.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qtabbar.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QMenu \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qmenu.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QMenuBar \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qmenubar.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QWidget \
-		include/VLCQtWidgets/WidgetVideo.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QFrame \
-		include/VLCQtCore/VideoDelegate.h \
-		include/VLCQtWidgets/SharedExportWidgets.h
+		ui_SimplePlayer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\SimplePlayer.o SimplePlayer.cpp
 
 debug/moc_SimplePlayer.o: debug/moc_SimplePlayer.cpp 
