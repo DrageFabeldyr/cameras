@@ -1,8 +1,3 @@
-/*
-* VLC-Qt Simple Player
-* Copyright (C) 2015 Tadej Novak <tadej@tano.si>
-*/
-
 #ifndef SIMPLEPLAYER_H_
 #define SIMPLEPLAYER_H_
 
@@ -36,6 +31,9 @@ private:
     VlcMedia *_media;
     VlcMediaPlayer *_player;
 
+    VlcInstance *_instance2;
+    //VlcMedia *_media2;
+    VlcMediaPlayer *_player2;
 //    EqualizerDialog *_equalizerDialog;
 };
 

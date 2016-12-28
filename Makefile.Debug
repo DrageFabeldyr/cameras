@@ -444,9 +444,8 @@ debug/main.o: main.cpp C:/Qt/5.7/mingw53_32/include/QtCore/QCoreApplication \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qicon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o main.cpp
 
-debug/SimplePlayer.o: SimplePlayer.cpp C:/Qt/5.7/mingw53_32/include/QtWidgets/QFileDialog \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qfiledialog.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qdir.h \
+debug/SimplePlayer.o: SimplePlayer.cpp include/VLCQtCore/Common.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/QString \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qstring.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qchar.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qglobal.h \
@@ -476,40 +475,51 @@ debug/SimplePlayer.o: SimplePlayer.cpp C:/Qt/5.7/mingw53_32/include/QtWidgets/QF
 		C:/Qt/5.7/mingw53_32/include/QtCore/qnamespace.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qarraydata.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qstringbuilder.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qfileinfo.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qfile.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qfiledevice.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qiodevice.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qobject.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qobjectdefs.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/QStringList \
+		C:/Qt/5.7/mingw53_32/include/QtCore/qstringlist.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qlist.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qalgorithms.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qiterator.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qhashfunctions.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qpair.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qbytearraylist.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qstringlist.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qregexp.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qstringmatcher.h \
+		include/VLCQtCore/SharedExportCore.h \
+		include/VLCQtCore/Instance.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/QObject \
+		C:/Qt/5.7/mingw53_32/include/QtCore/qobject.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/qobjectdefs.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/qobjectdefs_impl.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qcoreevent.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qscopedpointer.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qmetatype.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qvarlengtharray.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qcontainerfwd.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qobject_impl.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qshareddata.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qhash.h \
+		include/VLCQtCore/Enums.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/QSizeF \
+		C:/Qt/5.7/mingw53_32/include/QtCore/qsize.h \
+		include/VLCQtCore/Media.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/QUrl \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qurl.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qurlquery.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qdialog.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qwidget.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/qshareddata.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/qhash.h \
+		include/VLCQtCore/MediaPlayer.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/QTimer \
+		C:/Qt/5.7/mingw53_32/include/QtCore/qtimer.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/qbasictimer.h \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qwindowdefs.h \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qwindowdefs_win.h \
+		include/VLCQtCore/Config.h \
+		SimplePlayer.h \
+		C:/Qt/5.7/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/5.7/mingw53_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/5.7/mingw53_32/include/QtWidgets/qwidget.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qmargins.h \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qpaintdevice.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qrect.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qsize.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qpoint.h \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qpalette.h \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qcolor.h \
@@ -521,6 +531,7 @@ debug/SimplePlayer.o: SimplePlayer.cpp C:/Qt/5.7/mingw53_32/include/QtWidgets/QF
 		C:/Qt/5.7/mingw53_32/include/QtGui/qpolygon.h \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qregion.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qdatastream.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/qiodevice.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qline.h \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qtransform.h \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qpainterpath.h \
@@ -543,34 +554,10 @@ debug/SimplePlayer.o: SimplePlayer.cpp C:/Qt/5.7/mingw53_32/include/QtWidgets/QF
 		C:/Qt/5.7/mingw53_32/include/QtCore/qlocale.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qset.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qcontiguouscache.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/qfile.h \
+		C:/Qt/5.7/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qtouchdevice.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QInputDialog \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qinputdialog.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qlineedit.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.7/mingw53_32/include/QtGui/qtextcursor.h \
-		C:/Qt/5.7/mingw53_32/include/QtGui/qtextformat.h \
-		C:/Qt/5.7/mingw53_32/include/QtGui/qpen.h \
-		C:/Qt/5.7/mingw53_32/include/QtGui/qtextoption.h \
-		include/VLCQtCore/Common.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/QString \
-		C:/Qt/5.7/mingw53_32/include/QtCore/QStringList \
-		include/VLCQtCore/SharedExportCore.h \
-		include/VLCQtCore/Instance.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/QObject \
-		include/VLCQtCore/Enums.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/QSizeF \
-		include/VLCQtCore/Media.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/QUrl \
-		include/VLCQtCore/MediaPlayer.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/QTimer \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qtimer.h \
-		C:/Qt/5.7/mingw53_32/include/QtCore/qbasictimer.h \
-		include/VLCQtCore/Config.h \
-		SimplePlayer.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QMainWindow \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/qmainwindow.h \
 		C:/Qt/5.7/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.7/mingw53_32/include/QtGui/qicon.h \
 		ui_SimplePlayer.h \
@@ -596,6 +583,7 @@ debug/SimplePlayer.o: SimplePlayer.cpp C:/Qt/5.7/mingw53_32/include/QtWidgets/QF
 		C:/Qt/5.7/mingw53_32/include/QtWidgets/qheaderview.h \
 		C:/Qt/5.7/mingw53_32/include/QtWidgets/qabstractitemview.h \
 		C:/Qt/5.7/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.7/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qitemselectionmodel.h \
 		C:/Qt/5.7/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \

@@ -40,6 +40,7 @@ public:
     QPushButton *pause;
     QPushButton *openUrl;
     VlcWidgetVideo *video;
+    VlcWidgetVideo *video2;
     QMenuBar *menubar;
     QMenu *menuFile;
     QMenu *menuMedia;
@@ -90,6 +91,11 @@ public:
         video->setObjectName(QStringLiteral("video"));
 
         gridLayout_2->addWidget(video, 1, 0, 1, 1);
+
+        video2 = new VlcWidgetVideo(centralwidget);
+        video2->setObjectName(QStringLiteral("video2"));
+
+        gridLayout_2->addWidget(video2, 1, 1, 1, 1);
 
         SimplePlayer->setCentralWidget(centralwidget);
         menubar = new QMenuBar(SimplePlayer);

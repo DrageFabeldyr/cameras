@@ -1,10 +1,5 @@
-/*
-* VLC-Qt Simple Player
-* Copyright (C) 2015 Tadej Novak <tadej@tano.si>
-*/
-
-#include <QFileDialog>
-#include <QInputDialog>
+//#include <QFileDialog>
+//#include <QInputDialog>
 
 #include <VLCQtCore/Common.h>
 #include <VLCQtCore/Instance.h>
@@ -28,8 +23,12 @@ SimplePlayer::SimplePlayer(QWidget *parent)
     _player = new VlcMediaPlayer(_instance);
     _player->setVideoWidget(ui->video);
     //_equalizerDialog->setMediaPlayer(_player);
+    _instance2 = new VlcInstance(VlcCommon::args(), this);
+    _player2 = new VlcMediaPlayer(_instance2);
+    _player2->setVideoWidget(ui->video2);
 
     ui->video->setMediaPlayer(_player);
+    ui->video2->setMediaPlayer(_player2);
     //ui->volume->setMediaPlayer(_player);
     //ui->volume->setVolume(50);
     //ui->seek->setMediaPlayer(_player);
@@ -50,6 +49,10 @@ SimplePlayer::~SimplePlayer()
     delete _player;
     delete _media;
     delete _instance;
+
+    delete _player2;
+    delete _instance2;
+
     delete ui;
 }
 
@@ -82,6 +85,6 @@ void SimplePlayer::openUrl()
     if (url.isEmpty())
         return;
 
-    _media = new VlcMedia(url, _instance);
-    _player->open(_media);
+    _media = new VlcMedia(url, _instance2);
+    _player2->open(_media);
 }
