@@ -2,6 +2,8 @@
 #define SIMPLEPLAYER_H_
 
 #include <QMainWindow>
+#include <QTimer>
+#include <QDebug>
 
 namespace Ui {
     class SimplePlayer;
@@ -23,6 +25,7 @@ public:
 private slots:
     void openLocal();
     void openUrl();
+    void check_state();
 
 private:
     Ui::SimplePlayer *ui;
@@ -31,14 +34,16 @@ private:
     VlcMedia *_media;
     VlcMediaPlayer *_player;
 
-    VlcInstance *_instance2;
+    //VlcInstance *_instance2;
     VlcMediaPlayer *_player2;
 
-    VlcInstance *_instance3;
+    //VlcInstance *_instance3;
     VlcMediaPlayer *_player3;
 
-    VlcInstance *_instance4;
+    //VlcInstance *_instance4;
     VlcMediaPlayer *_player4;
+
+    QTimer *check_timer; // таймер проверки состояния
 };
 
 #endif // SIMPLEPLAYER_H_
